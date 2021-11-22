@@ -8,11 +8,6 @@ __pycache__/
 
 # files
 upstox.com.json
-first_project.ipynb
-second_project.ipynb
-third_project.ipynb
-fourth_project.ipynb
-fifth_project.ipynb
 # Distribution / packaging
 .Python
 build/
