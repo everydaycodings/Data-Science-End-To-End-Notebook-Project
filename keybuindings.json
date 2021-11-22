@@ -1,0 +1,183 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+d",
+        "command": "list.focusPageDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-list.focusPageDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl",
+        "command": "extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+y ctrl+shift+y",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+t ctrl+shift+j",
+        "command": "extension.vim_ctrl+x",
+        "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-extension.vim_ctrl+x",
+        "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+r ctrl+shift+h",
+        "command": "filesExplorer.cut",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-filesExplorer.cut",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+f e",
+        "command": "gitlens.views.branches.copy",
+        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.branches/"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.branches.copy",
+        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.branches/"
+    },
+    {
+        "key": "ctrl+shift+end ctrl+shift+s",
+        "command": "extension.vim_ctrl+c",
+        "when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-extension.vim_ctrl+c",
+        "when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+pagedown ctrl+shift+s",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+s delete",
+        "command": "keybindings.editor.copyKeybindingEntry",
+        "when": "inKeybindings && keybindingFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-keybindings.editor.copyKeybindingEntry",
+        "when": "inKeybindings && keybindingFocus"
+    },
+    {
+        "key": "end pageup",
+        "command": "problems.action.copy",
+        "when": "problemFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-problems.action.copy",
+        "when": "problemFocus"
+    },
+    {
+        "key": "ctrl+pageup home",
+        "command": "remote.tunnel.copyAddressInline",
+        "when": "tunnelViewFocus && tunnelType == 'Detected' || tunnelViewFocus && tunnelType == 'Forwarded'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-remote.tunnel.copyAddressInline",
+        "when": "tunnelViewFocus && tunnelType == 'Detected' || tunnelViewFocus && tunnelType == 'Forwarded'"
+    },
+    {
+        "key": "ctrl+pageup ctrl+pageup",
+        "command": "search.action.copyMatch",
+        "when": "fileMatchOrMatchFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-search.action.copyMatch",
+        "when": "fileMatchOrMatchFocus"
+    },
+    {
+        "key": "ctrl+shift+e ctrl+shift+d",
+        "command": "extension.vim_ctrl+a",
+        "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-extension.vim_ctrl+a",
+        "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+shift+w",
+        "command": "list.selectAll",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-list.selectAll",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus"
+    },
+    {
+        "key": "home pageup",
+        "command": "extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+    },
+    {
+        "key": "delete g",
+        "command": "filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    }
+]
