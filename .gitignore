@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+Datasets/New_Orleans_Airbnb_Listings_and_Reviews/
 # C extensions
 *.so
 
